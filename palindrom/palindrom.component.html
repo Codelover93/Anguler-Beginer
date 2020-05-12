@@ -1,0 +1,6 @@
+<div *ngIf="gvnyear%400==0 || gvnyear%100!=0 && gvnyear%4==0 else notleapyear">
+    <h1>This year is leap year</h1>
+</div>
+<ng-template #notleapyear>
+    <h1>This year is not a leap year</h1>
+</ng-template>

@@ -1,0 +1,25 @@
+<form [formGroup]='resulrform'>
+    <table>
+        <tr>
+            <td><label>Bengali:</label></td>
+            <td><input type="text" formControlName="ben"></td>
+        </tr>
+        <tr>
+            <td><label>English:</label></td>
+            <td><input type="text" formControlName="eng"></td>
+        </tr>
+        <tr>
+            <td><label>Math:</label></td>
+            <td><input type="text" formControlName="math"></td>
+        </tr>
+        <tr>
+            <td><label>Physics:</label></td>
+            <td><input type="text" formControlName="phs"></td>
+        </tr>
+        <tr>
+            <td><label>Chemistry:</label></td>
+            <td><input type="text" formControlName="chm"></td>
+        </tr>
+        <tr><button (click)="formsubmit()">Submit</button></tr>      
+    </table>
+</form>

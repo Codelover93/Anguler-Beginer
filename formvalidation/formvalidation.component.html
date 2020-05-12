@@ -1,0 +1,40 @@
+<form [formGroup]="frmvlidgrp">
+    <table>
+        <tr>
+            <td>Name:</td>
+            <td>
+                <input type="text" placeholder="Enter your name" formControlName="name" (keyup)="checking('name',chkclk)">
+                {{namerror}}
+            </td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td>
+                <input type="email" placeholder="Enter your email address" formControlName="email" (keyup)="checking('email',chkclk)">
+                {{emailerror}}
+            </td>
+        </tr>
+        <tr>
+            <td>Phone:</td>
+            <td>
+                <input type="tel" placeholder="Enter your phone number" formControlName="phn" (keyup)="checking('phn',chkclk)">
+                {{phnerror}}
+            </td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td>
+                <input type="password" placeholder="Enter your password" formControlName="pass" (keyup)="checking('pass',chkclk)">
+                {{passerror}}
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button class="btn btn-primary" (click)="submit()">Submit</button>
+            </td>
+            <td>
+                {{allfieldblank}}
+            </td>
+        </tr>
+    </table>
+</form>
